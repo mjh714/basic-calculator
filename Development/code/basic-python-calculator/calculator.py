@@ -1,6 +1,13 @@
-num1 = int(input("Enter first number: "))
-num2 = int(input("Enter second number: "))
-op = str(input("Enter Operator: "))
+try:
+    num1 = int(input("Enter first number: "))
+except ValueError:
+    print("Something went wrong please use numbers only")
+    num2 = int(input("Enter second number: "))
+except ValueError:
+    print("Something went wrong please use numbers only")
+    op = str(input("Enter Operator: "))
+except:
+    print("Something went wrong please use oporators only")
 
 if op == '+':
     print('The sum is ' + str(num1 + num2))
