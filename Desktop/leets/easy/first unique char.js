@@ -1,8 +1,6 @@
 /*
 Given a string s, find the first non-repeating character in it and return its index. If it does not exist, return -1.
 
- 
-
 Example 1:
 
 Input: s = "leetcode"
@@ -47,8 +45,8 @@ const firstUniqueChar = (s) => {
     for(let j = 0; j < s.length; j++){
         let currChar = s[j]
         if(stringMap.get(currChar) === 1){
-           return j;
-           }
+            return j;
+        }
     }
     return -1;
 };
